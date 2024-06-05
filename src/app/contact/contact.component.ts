@@ -1,0 +1,12 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-contact',
+  template: ` <h2>Contact component</h2> `,
+  styleUrls: ['./contact.component.css'],
+})
+export class ContactComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
