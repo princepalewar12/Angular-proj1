@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { StatusComponent } from './status/status.component';
 import { LoginComponent } from './login/login.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
+import { AccessModule } from './access/access.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     StatusComponent,
     AddContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, LoginComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

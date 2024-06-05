@@ -17,6 +17,19 @@ const routes: Routes = [
       { path: 'edit/:id', component: AddContactComponent },
     ],
   },
+  {
+    path: 'access',
+    loadChildren: () =>
+      import('./access/access.module').then((opt) => opt.AccessModule),
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./login/login.component').then((opt) => opt.LoginComponent),
+  },
+  {
+    path: '**',component: StatusComponent
+  },
   { path: 'status', component: StatusComponent },
 ];
 

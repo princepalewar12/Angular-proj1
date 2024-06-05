@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <h2>Contact component</h2>
     <a routerLink="add">Add Contact</a><br />
-    <a routerLink="edit/1">Edit Contact</a>
+    <a routerLink="edit/005">Edit Contact</a>
     <div>
       <router-outlet></router-outlet>
     </div>
