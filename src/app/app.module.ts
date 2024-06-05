@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatusComponent } from './status/status.component';
 import { LoginComponent } from './login/login.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     ContactComponent,
     StatusComponent,
+    AddContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, LoginComponent],
   providers: [],
