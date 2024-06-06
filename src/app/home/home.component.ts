@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import{HomeservicService} from './homeservic.service'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private HomeservicService :HomeservicService) { }
+  headername="Angular Tutorial"
+  salary = 50000;
+  Data:any;
   ngOnInit(): void {
+    this.displaydata();
   }
-
+  displaydata(){
+ this.HomeservicService.datafetch().subscribe((res)=>{
+    this.Data = res ;
+    console.log('data',this.Data);
+    
+ })
+  }
 }

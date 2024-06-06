@@ -27,9 +27,10 @@ const routes: Routes = [
     loadComponent: () =>
       import('./login/login.component').then((opt) => opt.LoginComponent),
   },
-  {
-    path: '**',component: StatusComponent
-  },
+  // {
+  //   path: '**',
+  //   component: StatusComponent,
+  // },
   { path: 'status', component: StatusComponent },
 ];
 
