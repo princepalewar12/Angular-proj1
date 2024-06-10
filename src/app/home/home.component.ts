@@ -9,6 +9,9 @@ export class HomeComponent implements OnInit {
   constructor(private HomeservicService: HomeservicService) {}
   headername = 'Angular Tutorial';
   salary = 50000;
+
+  colors =["red","blue","green","yellow","brown"]
+
   isDisabled = true;
   colorName = 'green';
   fontSize = '40px';

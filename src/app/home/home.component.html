@@ -1,6 +1,9 @@
 <h1 [ngStyle]="styleObj">{{headername}}</h1>
-<h3 [ngClass]="className">The salary Would be {{salary | currency}}</h3>
+<h3 [ngClass]="className" *ngIf="salary>0">The salary Would be {{salary | currency}}</h3>
 <h2>Hello Prince</h2>
+<ul *ngFor="let item of colors">
+    <li>{{item}}</li>
+</ul>
 <br>
 <button (click)="functionClick('Button Clicked')" class="border border-success ml-2 bg-primary p-2">Click
     Me!</button>
