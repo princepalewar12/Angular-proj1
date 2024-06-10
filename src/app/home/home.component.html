@@ -1,5 +1,5 @@
-<h1>{{headername}}</h1>
-<h3 [style.color]="colorName" [style.font-size]="fontSize">The salary Would be {{salary | currency}}</h3>
+<h1 [ngStyle]="styleObj">{{headername}}</h1>
+<h3 [ngClass]="className">The salary Would be {{salary | currency}}</h3>
 <h2>Hello Prince</h2>
 <br>
 <button (click)="functionClick('Button Clicked')" class="border border-success ml-2 bg-primary p-2">Click

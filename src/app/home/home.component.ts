@@ -11,7 +11,13 @@ export class HomeComponent implements OnInit {
   salary = 50000;
   isDisabled = true;
   colorName = 'green';
-  fontSize = '40px';  
+  fontSize = '40px';
+  className = 'headClass';
+  styleObj = {
+    color: 'red',
+    'font-weight': 'bold',
+    'font-size': '30px',
+  };
   Data: any;
 
   ngOnInit(): void {
