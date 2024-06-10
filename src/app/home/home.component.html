@@ -1,7 +1,35 @@
 <h1>{{headername}}</h1>
 <h3>The salary Would be {{salary | currency}}</h3>
+<h2>Hello Prince</h2>
+<br>
+<button (click)="functionClick('Button Clicked')" class="border border-success ml-2 bg-primary p-2">Click
+    Me!</button>
 
-<div *ngFor="let item of Data" style="color: black;background-color: blue;">
-    <!-- <h3>
-        {{item.title}}</h3> -->
-</div>
+<input class="p-2 ms-2 border-2 border-danger"[value]="isDisabled" [disabled]="isDisabled" #txt (change)="functionClick(txt.value)">
+<input class="p-2 ms-2 border-2 border-success"  #txt (change)="functionClick(txt.value)">
+
+
+
+
+
+
+
+<!-- <div *ngFor="let item of Data" style="color: black;background-color: blue;"> -->
+<!-- <div class="container">
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Data">
+                <td></td>
+                <td>{{item.id}}</td>
+                <td>{{item.body}}</td> 
+            </tr>
+        </tbody>
+    </table>
+</div> -->

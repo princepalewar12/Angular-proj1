@@ -8,6 +8,7 @@ export class HomeservicService {
   constructor(private http:HttpClient) { }
 
   datafetch(){
-  return this.http.get('http://localhost:3000/getdata');
+  return this.http.get('http://localhost:2200/comments');
   }
 }
+ 

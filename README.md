@@ -11,3 +11,8 @@
  - ng g m name (specify what you want) ex: --routing
 # To create component for specific module
  - ng g c moduleName/componentName
+
+
+ - Interpolation
+ - Event Binding
+ - property Binding
