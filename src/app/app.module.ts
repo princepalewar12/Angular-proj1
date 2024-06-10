@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { AccessModule } from './access/access.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     StatusComponent,
     AddContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
